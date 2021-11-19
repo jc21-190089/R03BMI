@@ -24,6 +24,7 @@ namespace R03BMI
             {
                 double h = double.Parse(height);
                 int w = int.Parse(weight);
+                string zyotai;
                 if (h >= 10)
                 {
                     h = h / 100;
@@ -33,11 +34,33 @@ namespace R03BMI
                     w = w / 1000;
                 }
                 double bmi = w / (h * h);
-                double bmi2 = Math.Round(bmi, 2);
+                double bmi2 = Math.Round(bmi, 1);
+                if(bmi2<18.5)
+                {
+                    zyotai = "低体重(痩せ)";
+                }
+                if(bmi2>=18.5&&bmi2<25)
+                {
+                    zyotai = "普通体重";
+                }
+                if(bmi2>=25&&bmi2<30)
+                {
+                    zyotai = "肥満(1度)";
+                }
+                if(bmi2>=30&&bmi2<35)
+                {
+                    zyotai = "肥満(2度)";
+                }
+                if(bmi2>=35&&bmi2<40)
+                {
+                    zyotai = "肥満(3度)";
+                }
+                if(bmi2>=40)
+                {
+                    zyotai = "肥満(4度)";
+                }
 
-
-
-                result.Text = "身長" + h + "m体重" + w + "kgの人のBMIは" + bmi2;
+                result.Text = "身長" + h + "m体重" + w + "kgの人のBMIは" + bmi2+" "+zyotai+です;
 
             }
             catch (FormatException ex)
