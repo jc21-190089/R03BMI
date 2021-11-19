@@ -29,7 +29,7 @@ namespace R03BMI
                 {
                     h = h / 100;
                 }
-                if(w>=10000)
+                if(w>=1000)
                 {
                     w = w / 1000;
                 }
