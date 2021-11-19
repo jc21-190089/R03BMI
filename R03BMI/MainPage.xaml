@@ -4,9 +4,9 @@
              x:Class="R03BMI.MainPage">
 
     <StackLayout>
-        <Label Text="身長を入力してください（10以上が入力された場合cmとして計算します。）" />
+        <Label Text="身長を入力してください" />
         <Entry Placeholder="m単位でもcm単位でも" x:Name="heighit" />
-        <Label Text="体重を入力してください（10000以上が入力された場合gとして計算します。）" />
+        <Label Text="体重を入力してください" />
         <Entry Placeholder="g単位でもkg単位でも" x:Name="weighit" />
         <Label Text="BMIが表示されます" x:Name="result"/>
         <Button Text="BMIを計算する" Clicked="Button_Clicked" />
