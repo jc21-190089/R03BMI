@@ -39,23 +39,23 @@ namespace R03BMI
                 {
                     zyotai = "低体重(痩せ)";
                 }
-                if(bmi2>=18.5&&bmi2<25)
+                if(bmi2>=18.5&&bmi2<25.0)
                 {
                     zyotai = "普通体重";
                 }
-                if(bmi2>=25&&bmi2<30)
+                if(bmi2>=25.0&&bmi2<30.0)
                 {
                     zyotai = "肥満(1度)";
                 }
-                if(bmi2>=30&&bmi2<35)
+                if(bmi2>=30.0&&bmi2<35.0)
                 {
                     zyotai = "肥満(2度)";
                 }
-                if(bmi2>=35&&bmi2<40)
+                if(bmi2>=35.0&&bmi2<40.0)
                 {
                     zyotai = "肥満(3度)";
                 }
-                if(bmi2>=40)
+                if(bmi2>=40.0)
                 {
                     zyotai = "肥満(4度)";
                 }
