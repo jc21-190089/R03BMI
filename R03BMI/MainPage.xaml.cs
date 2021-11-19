@@ -28,9 +28,9 @@ namespace R03BMI
                 {
                     h = h / 100;
                 }
-                if(w>10)
+                if(w>=10000)
                 {
-                    w = w / 100;
+                    w = w / 1000;
                 }
                 double bmi = w / (h * h);
                 double bmi2 = Math.Round(bmi, 2);
