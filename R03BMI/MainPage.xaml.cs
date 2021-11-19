@@ -24,7 +24,7 @@ namespace R03BMI
             {
                 double h = double.Parse(height);
                 int w = int.Parse(weight);
-                string zyotai;
+                string zyotai=null;
                 if (h >= 10)
                 {
                     h = h / 100;
