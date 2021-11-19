@@ -60,7 +60,7 @@ namespace R03BMI
                     zyotai = "肥満(4度)";
                 }
 
-                result.Text = "身長" + h + "m体重" + w + "kgの人のBMIは" + bmi2+" "+zyotai+です;
+                result.Text = "身長" + h + "m体重" + w + "kgの人のBMIは" + bmi2+" "+zyotai+"です";
 
             }
             catch (FormatException ex)
