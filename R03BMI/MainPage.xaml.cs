@@ -43,7 +43,7 @@ namespace R03BMI
             catch (FormatException ex)
             {
                 Console.WriteLine(ex);
-                result.Text = "!!!";
+                result.Text = "数字を入力してください";
             }
 
         }
